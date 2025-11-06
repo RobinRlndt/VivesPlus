@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct VivesPlusApp: App {
+    @State var uurroosterDataStore = UurroosterDataStore()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(uurroosterDataStore)
+                .tint(.red)
         }
     }
 }
